@@ -2,10 +2,10 @@
 
 :root {
   --clr-red: #BC4B51;
-  --clr-blue: #3e94b9;
+  --clr-blue: #2B7EA2;
   --clr-orange: #F4A259;
   --clr-yellow: #F4E285;
-  --clr-green: #5B8E7D;
+  --clr-green: #48806E;
   --clr-olive: #8CB369;
   --clr-grey: #676767;
   --clr-white: #fff;
@@ -242,14 +242,16 @@ p, h1, h2, h3, h4, h5, h6 {
   font-size: 1.5rem;
 }
 
-.main-container a {
+.main-container a,
+.event-grid a {
   display: block;
   font-weight: var(--fw-bold);
   transition: all 250ms ease-in-out;
   cursor: pointer;
 }
 
-.main-container a:hover {
+.main-container a:hover,
+.event-grid a:hover {
   transform: translateY(-5px);
   
 }
@@ -381,7 +383,7 @@ footer i {
 .visit-article {
   color: var(--clr-white);
   background-color: var(--clr-green);
-  padding: 2.5rem 0 2rem 3rem;
+  padding: 2.5rem 0.5rem 2rem 1.5rem;
 }
 
 .visit-h1 {
@@ -390,8 +392,8 @@ footer i {
 }
 
 .visit-para {
-  font-size: 1.1rem;
-  max-width: 400px;
+  font-size: 1.2rem;
+  max-width: 350px;
   margin-top: 25px;
   line-height: 30px;
 }
@@ -455,6 +457,71 @@ footer i {
 .shop-section p {
   margin-bottom: 60px;
   max-width: 300px;
+}
+
+/* EVENTS PAGE */
+
+.events-header {
+  background-color: var(--clr-blue);
+  color: var(--clr-white);
+  font-size: 2.25rem;
+  margin-bottom: 50px;
+  padding: 130px 0 40px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.robo-article, 
+.botanics-article {
+  color: var(--clr-white);
+  background-color: var(--clr-red);
+  display: flex;
+  justify-content: space-around;
+  padding: 2.5rem 0 2rem 2rem;
+}
+
+.botanics-article {
+  background-color: var(--clr-green);
+}
+
+.robo-article h2,
+.botanics-article h2 {
+  font-size: 1.8rem;
+  padding-top: 50px;
+}
+
+.robo-article p,
+.botanics-article p {
+  max-width: 200px;
+  padding: 20px 0;
+}
+
+.robo-img,
+.botanics-img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 400px;
+}
+
+.next-header {
+  margin: 70px 0 30px;
+  padding-left: 2rem;
+}
+
+.vr-article {
+  display: flex;
+  justify-content: space-around;
+}
+
+.vr-article p {
+  padding: 10px 10px 10px 2rem;
+  max-width: 150px;
+}
+
+.vr-img {
+  object-fit: cover;
+  height: 150px;
+  width: 150px;
 }
 
 /* MEDIA QUERIES */
@@ -652,6 +719,7 @@ footer i {
   
     .visit-article {
       grid-column: 1 / 5;
+      padding-left: 200px;
     }
 
     .shop-flex {
