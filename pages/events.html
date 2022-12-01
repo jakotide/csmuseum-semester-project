@@ -19,12 +19,12 @@
   <header>
     <!-- Navigation Bar -->
     <nav class="navbar">
-      <a href="index.html"class="logo"><img src="../images/csm-logo.png" alt="Logo for Community Science Museum" class="logo-img"></a>
+      <a href="../index.html"class="logo"><img src="../images/csm-logo.png" alt="Logo for Community Science Museum" class="logo-img"></a>
       <input class="menu-btn" type="checkbox" id="menu-btn">
       <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
       <ul class="menu">
-        <li><a class="visit-nav" href="#">Visit</a></li>
-        <li><a class="events-nav" href="#">Events</a></li>
+        <li><a class="visit-nav" href="../pages/visit.html">Visit</a></li>
+        <li><a class="events-nav" href="../pages/events.html">Events</a></li>
         <li><a class="exhi-nav" href="#">Exhibitions</a></li>
         <li><a class="explore-nav" href="#">Explore</a></li>  
       </ul>
@@ -32,53 +32,85 @@
     <h1 class="events-header">Upcoming events</h1>
   </header>
   <!-- Main Section-->
-  <section class="event-grid">
-    <article class="robo-article">
-      <div>
-        <h2>Monday</h2>
-        <p>28/11/2022</p>
-      </div>
-      <div>
-        <h3>Robotics class</h3>
-        <p>Have fun builing machines lore lorem</p>
-        <p>Age 7-15</p>
-        <a class="main-link">Learn More</a>
-      </div>
-    </article>
-    <img src="../images/getty/robotics.jpg" class="robo-img" alt="Two girls focused and building a machine">
-    <article class="botanics-article">
-      <div>
-        <h2>Tuesday</h2>
-        <p>29/11/2022</p>
-      </div>
-      <div>
-        <h3>Botanics class</h3>
-        <p>Have fun builing machines lore lorem</p>
-        <p>Age 10-15</p>
-        <a>Learn More</a>
-      </div>
-    </article>
-    <img src="../images/getty/botanics.jpg" class="botanics-img" alt="Two girls focused and building a machine">
-  </section>
-  <h4 class="next-header">Next month</h4>
-  <section class="next-section">
-    <article class="vr-article">
-      <div class="next-col">
-      <div>
-        <h3>Thursday</h3>
-        <p>1/12/2022</p>
-      </div>
-      <div>
-        <h3>VR Mechanics</h3>
-        <p>Have fun builing machines lore lorem</p>
-        <p>Age 10-15</p>
-        <a>Learn More</a>
-      </div>
-      </div>
-      <img src="../images/getty/vr.jpg"  class="vr-img" alt="Kids with VR glasses on learning and building">
-    </article>
-
-  </section>
+  <main>
+    <section class="event-grid">
+      <article class="robo-article">
+        <div>
+          <h2>Monday</h2>
+          <p class="event-date">28/11/2022</p>
+        </div>
+        <div>
+          <h3>Robotics class</h3>
+          <p>Have fun building machines and explore robotics!</p>
+          <p>Age 7-15</p>
+          <a class="main-link">Learn More</a>
+        </div>
+      </article>
+      <img src="../images/getty/robotics.jpg" class="robo-img" alt="Two girls focused and building a machine">
+      <article class="botanics-article">
+        <div class="botanics-left">
+          <h3>Botanics class</h3>
+          <p>Learn about botany and how plants work!</p>
+          <p>Age 10-15</p>
+          <a>Learn More</a>
+        </div>
+        <div class="botanics-right">
+          <h2>Tuesday</h2>
+          <p class="event-date">29/11/2022</p>
+        </div>
+      </article>
+      <img src="../images/getty/botanics.jpg" class="botanics-img" alt="A person holding a box of flourishing Seeds in a botanics class" >
+    </section>
+    <!-- Next month section -->
+    <h4 class="next-header">Next month</h4>
+    <section class="next-section">
+      <article class="vr-article">
+        <img src="../images/getty/vr.jpg"  class="vr-img" alt="Kids with VR glasses on learning and building stuff">
+        <div class="next-col">
+          <div>
+            <h3 class="vr-header">VR Mechanics</h3>
+            <p class="vr-text">Be a mechanical engineer in a virtual reality!</p>
+            <p class="vr-age">Age 10-15</p>
+            <a>Learn More</a>
+          </div>
+          <div class="next-dates">
+            <h3>Thursday</h3>
+            <p>1/12/2022</p>
+          </div>
+        </div>
+      </article>
+      <article class="bio-article">
+        <img src="../images/getty/bio1.jpg"  class="bio-img" alt="Kids having fun with science experiments. Blue foam coming out of a jar">
+        <div class="next-col">
+          <div>
+            <h3 class="bio-header">Kids Bio Lab</h3>
+            <p class="bio-text">Fun and cool science experiments for kids!</p>
+            <p class="bio-age">Age 7-12</p>
+            <a>Learn More</a>
+          </div>
+          <div class="next-dates">
+           <h3>Friday</h3>
+            <p>2/12/2022</p>
+          </div>
+        </div>
+      </article>
+      <article class="sleep-article">
+        <img src="../images/getty/sleep.jpg"  class="sleep-img" alt="Happy kids in a tent watching a movie on a laptop while eating popcorn">
+        <div class="next-col">
+          <div>
+            <h3 class="sleep-header">Museum Sleepover</h3>
+            <p class="sleep-text">Join us at the museum for a magical sleepover!</p>
+            <p class="sleep-age">Age 7-15</p>
+            <a>Learn More</a>
+          </div>
+          <div class="next-dates">
+            <h3>Saturday</h3>
+            <p>3/12/2022</p>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
   <!-- Footer -->
   <footer>  
     <div>
