@@ -232,7 +232,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .main-container h2,
 .main-container p, .main-container a  {
-  padding: 2.85rem 1.5rem;
+  padding: 2rem 1.5rem;
 }
 
 .main-container h2 {
@@ -293,7 +293,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .exhi-h2 {
-  padding: 2.85rem 1.2rem 2.85rem 1.5rem !important;
+  padding: 2.85rem 1.2rem 1rem 1.5rem !important;
 }
 
 .event-background {
@@ -358,7 +358,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .volunteer-text {
-  margin-bottom: 150px;
+  margin-bottom: 90px;
 }
 
 .volunteer-text p,
@@ -378,12 +378,13 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .newsletter h3 {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 .newsletter p {
-  margin: 30px 0;
-  font-size: 1.1rem;
+  margin: 35px auto;
+  font-size: 1.2rem;
+  max-width: 200px;
 }
 
 .email-box {
@@ -406,12 +407,9 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .text-box {
-  padding: 0;
-}
-
-.text-box {
   width: 0;
   transition: 0.5s ease-in;
+  padding: 0;
 }
 
 .email-box:hover > .text-box, .text-box:focus {
@@ -720,7 +718,7 @@ footer i {
   margin-top: 50px;
 }
 
-/* EVENTS/EXHI SPECIFIC PAGES */
+/* EVENTS/EXHI/EXPL/INVO SPECIFIC PAGES */
 
 .evex-h1 {
   font-size: 2rem;
@@ -779,12 +777,118 @@ footer i {
   margin: 0 auto;
 }
 
-.cosmo-section div {
+.cosmo-section div,
+.invo-section {
   background-color: var(--clr-yellow);
   color: var(--clr-black);
 }
 
+.invo-section div,
+.expo-section {
+  color: var(--clr-black);
+}
+
+.expo-section {
+  background-color: var(--clr-orange);
+}
+
+.ex-invo-h2 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.invo-h1,
+.expo-h1 {
+  background-color: var(--clr-yellow);
+  padding: 140px 0 70px;
+  text-align: center;
+}
+
+.expo-h1 {
+  background-color: var(--clr-orange);
+}
+
+.invo-section p,
+.expo-section p,
+.expo-section h2 {
+  color: var(--clr-black);
+}
+
+
+/* EXPLORE PAGE */
+
+.explore-h1 {
+  padding: 120px 0 30px;
+  text-align: center;
+  font-weight: var(--fw-xbold)
+}
+
+.explore-section {
+  background-color: var(--clr-orange);
+  margin-bottom: 50px;
+}
+
+.explore-article {
+  padding: 30px 30px;
+}
+
+.explore-article h2 {
+  margin-bottom: 20px;
+}
+
+.explore-article p {
+  max-width: 400px;
+}
+
 /* MEDIA QUERIES */
+
+@media (min-width: 42.5em) {
+  
+/* EXPLORE PAGE */
+
+  .explore-section {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(10, 100px);
+  }
+
+  .teacher-article {
+    grid-column: 1 / 6;
+    grid-row: 1 / 6;
+  }
+
+  .teacher-img,
+  .kids-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .teacher-img {
+    grid-column: 7 / 13;
+    grid-row: 1 / 6;
+    padding: 60px 30px 0 0 ;
+  }
+
+  .kids-img {
+    grid-column: 1 / 7;
+    grid-row: 6 / 12;
+    padding-left: 30px;
+  }
+
+  .kids-article {
+    grid-column: 7 / 12;
+    grid-row: 5 / 12;
+    padding-top: 100px;
+  }
+
+  .explore-article p {
+    width: 270px;
+    max-width: 650px;
+  }
+
+}
+
 
 @media (min-width: 48em) {
   
@@ -833,6 +937,10 @@ footer i {
 
   .newsletter {
     width: 60%;
+  }
+
+  .newsletter p {
+    max-width: 300px;
   }
 
   /* VISIT US */ 
@@ -893,6 +1001,24 @@ footer i {
   .shop-section h3 {
     font-size: 1.5rem;
     width: 60%;
+  }
+
+  /* EXPLORE PAGE */
+
+  .explore-section {
+    padding: 40px;
+  }
+
+  .teacher-article {
+    margin-left: auto;
+  }
+
+  .kids-article {
+    padding-left: 80px;
+  }
+
+  .ex-invo-h2 {
+    padding: 0 20px 30px 0;
   }
 
   /* EVENT PAGE / EXHIBITION PAGE */ 
@@ -1094,6 +1220,8 @@ footer i {
 
   .evex-div {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     height: 400px;
   }
@@ -1127,6 +1255,16 @@ footer i {
     height: 400px;
     grid-column: 1 / 3;
     grid-row: 2 / 3;
+  }
+
+  .invo-img {
+    z-index: 4 !important;
+  }
+
+  .invobox,
+  .invobox2 {
+    background-color: var(--clr-black);
+    z-index: 3 !important;
   }
 
 }
@@ -1292,6 +1430,34 @@ footer i {
     grid-column: 7 / 11;
   }
 
+  /* EXPLORE PAGE */
+
+  .explore-h1 {
+    font-size: 3rem; 
+  }
+
+  .explore-section h2 {
+    font-size: 2rem;
+  }
+
+  .explore-section p {
+    width: 370px;
+    font-size: 1.2rem;
+  }
+
+   .explore-section {
+    padding: 70px;
+  }
+
+  .teacher-img,
+  .kids-img {
+    max-width: 600px;
+  }
+
+  .kids-img {
+    margin-left: auto;
+  }
+   
   /* EVENT PAGE / EXHIBITION PAGE */
   
   .main-h2,
@@ -1339,6 +1505,56 @@ footer i {
   .next-h3 {
     font-size: 1.3rem;
   }
+
+
+  .evex-sec {
+    padding: 0 170px 0 170px;
+    margin: 0 auto;
+   }
+  
+   .evex-box {
+    display: block;
+    position: absolute;
+    z-index: -3;
+    width: 250px;
+    height: 250px;
+  }
+
+  .robo-box,
+  .robo-box-2 {
+    background: var(--clr-red) !important;
+  }
+
+  .botanics-box,
+  .botanics-box-2 {
+    background: var(--clr-green) !important;
+  }
+
+  .robo-box,
+  .botanics-box,
+  .evex-box-1 {
+    top: -32px;
+    right: 135px;
+  }
+
+  .robo-box-2,
+  .botanics-box-2,
+  .evex-box-2 {
+    bottom: 70px;
+    left: 140px
+  }
+
+  .evex-h1 {
+    font-size: 2.7rem;
+    margin-bottom: 40px;
+  }
+
+  .invo-h1,
+  .expo-h1 {
+    font-size: 3rem;
+    font-weight: var(--fw-xbold);
+  }
+
 }
 
 @media (min-width: 90em) {
