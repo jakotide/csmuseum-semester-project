@@ -171,6 +171,10 @@ p, h1, h2, h3, h4, h5, h6 {
   top: 0;
 }
 
+.label-logo {
+  display: none;
+}
+
 /* HERO/LANDING */
 
 .hero-img {
@@ -231,12 +235,16 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .main-container h2,
-.main-container p, .main-container a  {
-  padding: 2rem 1.5rem;
+.main-container p  {
+  padding: 2rem 1.5rem 1rem;
 }
 
 .main-container h2 {
   font-size: 1.5rem;
+}
+
+.main-container a {
+  padding: 6.5rem 1.5rem 1.3rem;
 }
 
 .learn-btn {
@@ -273,7 +281,6 @@ p, h1, h2, h3, h4, h5, h6 {
  .exhi-background {
   display: flex;
   flex-direction: column;
-  justify-content:center;
 }
 
 .event-p,  
@@ -434,6 +441,7 @@ footer {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, auto);
   padding-bottom: 50px;
+  justify-content: center;
 }
 
 footer div {
@@ -443,7 +451,7 @@ footer div {
 
 footer h3 {
   padding: 20px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   width: 160px;
 }
 
@@ -794,14 +802,15 @@ footer i {
 
 .ex-invo-h2 {
   text-align: center;
-  padding-bottom: 20px;
+  padding: 0 0 20px 0;
 }
 
 .invo-h1,
 .expo-h1 {
   background-color: var(--clr-yellow);
-  padding: 140px 0 70px;
+  padding: 140px 0 40px;
   text-align: center;
+  text-decoration: underline;
 }
 
 .expo-h1 {
@@ -814,31 +823,96 @@ footer i {
   color: var(--clr-black);
 }
 
+.invo-img {
+  padding-bottom: 40px;
+}
 
-/* EXPLORE PAGE */
+/* FORM SECTION */
 
-.explore-h1 {
-  padding: 120px 0 30px;
+.form-section {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 70px 0 350px;
+}
+
+.form-h3 {
+  margin-bottom: 40px;
+  font-size: 1.5rem;
+  color: var(--clr-green);
   text-align: center;
-  font-weight: var(--fw-xbold)
 }
 
-.explore-section {
-  background-color: var(--clr-orange);
-  margin-bottom: 50px;
+.form {
+  position: relative;
+  width: 20rem;
+  height: 3rem;
 }
 
-.explore-article {
-  padding: 30px 30px;
+.form-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 4px solid var(--clr-green);
+  border-top: none;
+  border-right: none;
+  outline: none;
+  background: none;
+  padding: 1.25rem
 }
 
-.explore-article h2 {
-  margin-bottom: 20px;
+.form-input:hover,
+.form-input:focus {
+  border-color: #F4A259;
 }
 
-.explore-article p {
-  max-width: 400px;
+.form-label {
+  position: absolute;
+  left: 1rem;
+  top: 0.8rem;
+  padding: 0 0 0.5rem;
+  color: var(--clr-green);
+  transition: top 300ms ease-in;
+  transition: left 300ms ease-in;
+  transition: font-size 200ms ease-in;
 }
+
+.form-input:focus ~ .form-label,
+.form-input:not(:placeholder-shown).form-input:not(:focus) ~ .form-label {
+  top: -0.6rem;
+  font-size: 0.8rem;
+  left: 0.8rem;
+}
+
+.form-email {
+  margin-top: 70px;
+}
+
+.form-area {
+  margin: 150px 0;
+  height: 7rem;
+}
+
+.form-send {
+  margin-top: 280px;
+  width: 20rem;
+  height: 3rem;
+  background-color: var(--clr-green);
+  border: none;
+  color: var(--clr-white);
+  cursor: pointer;
+}
+
+.form-number {
+  margin-top: 140px;
+}
+
+.form-send-event {
+  margin-top: 210px;
+}
+
 
 /* MEDIA QUERIES */
 
@@ -1003,26 +1077,8 @@ footer i {
     width: 60%;
   }
 
-  /* EXPLORE PAGE */
-
-  .explore-section {
-    padding: 40px;
-  }
-
-  .teacher-article {
-    margin-left: auto;
-  }
-
-  .kids-article {
-    padding-left: 80px;
-  }
-
-  .ex-invo-h2 {
-    padding: 0 20px 30px 0;
-  }
 
   /* EVENT PAGE / EXHIBITION PAGE */ 
-
 
   .event-grid, 
   .exhi-grid {
@@ -1259,6 +1315,7 @@ footer i {
 
   .invo-img {
     z-index: 4 !important;
+    padding-bottom: 0;
   }
 
   .invobox,
@@ -1406,6 +1463,16 @@ footer i {
 
   footer {
     padding: 20px 200px 50px;
+  }
+
+  .footer-h3 {
+    font-size: 1.5rem;
+    width: 220px;
+  }
+
+  .footer-logo {
+    max-width: 180px;
+    
   }
 
   /* VISIT */
