@@ -470,7 +470,6 @@ footer p {
 footer i {
   padding: 10px;
   margin-left: 10px;
-  cursor: pointer;
 }
 
 .footer-support {
@@ -522,9 +521,13 @@ footer i {
   margin-top: 40px;
 }
 
-.visit-info h3, 
+.visit-info h2, 
 .visit-info p {
   padding-bottom: 13px;
+}
+
+.visit-info h2 {
+  font-size: 1.2rem;
 }
 
 .food-article {
@@ -534,8 +537,9 @@ footer i {
   height: 300px;
 }
 
-.food-section h2 {
+.food-section h3 {
   margin: 15px 0 40px 0;
+  font-size: 1.6rem;
 }
 
 .food-section p {
@@ -561,7 +565,7 @@ footer i {
   color: var(--clr-green);
   padding-bottom: 20px;
   border-bottom: var(--clr-black) solid 2px;
-  width: 30%;
+  width: 130px;
 }
 
 .shop-section p {
