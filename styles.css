@@ -12,6 +12,7 @@
   --clr-black: #000;
 
   --ff-main: 'Poppins', sans-serif;
+  --ff-sec: 'Lora', serif;
 
   --fw-regular: 400;
   --fw-bold: 700;
@@ -234,7 +235,7 @@ p, h1, h2, h3, h4, h5, h6 {
   grid-template-rows: repeat(2, 420px);
 }
 
-.main-container h2,
+.main-ev-h2,
 .main-container p  {
   padding: 2.5rem 1.5rem 1rem;
 }
@@ -300,7 +301,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .exhi-h2 {
-  padding: 2.85rem 1.2rem 1rem 1.5rem !important;
+  padding: 2.85rem 1.2rem 1rem 1.5rem;
 }
 
 .event-background {
@@ -469,6 +470,7 @@ footer p {
 footer i {
   padding: 10px;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .footer-support {
@@ -779,6 +781,7 @@ footer i {
 .evex-div p {
   width: 300px;
   margin: 0 auto;
+  font-family: lora;
 }
 
 .evex-box {
@@ -1353,6 +1356,7 @@ footer i {
 
   .main-container a {
     font-size: 1.3rem;
+    padding-top: 6rem;
   }
 
   .main-container p {
