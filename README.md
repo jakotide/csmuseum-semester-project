@@ -1,4 +1,4 @@
-![csm1](https://github.com/jakotide/csmuseum-semester-project/assets/111381232/c5c7fec5-c363-42d1-97c9-5981d4dd47a8)
+![csm1](https://github.com/jakotide/csmuseum-semester-project/assets/111381232/128775b6-6278-4291-8a4d-d73e62694a48)
 
 # Community Science Museum
 
